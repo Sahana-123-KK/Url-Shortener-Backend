@@ -2,7 +2,7 @@ const express = require("express")
 
 const app = express()
 const connect = require("./db/connect")
-app.use(express.json({ extended: false }))
+app.use(express.json({ extended: false })) //--> new and important to note.
 
 connect()
 
